@@ -52,8 +52,8 @@ namespace DoublePulsar
             }
         }
 
-        string[] usernames = { "Plus", "Alex", "Thanos", "Andrew", "Sweepi"};
-        string[] passwords = { "angrybirds", "theoneandonly", "BETA-TESTER02", "BETA-TESTER03", "Coder-Cha05" };
+        string[] usernames = { "Plus", "Alex", "Thanos", "Andrew", "Sweepi", "Indominus" };
+        string[] passwords = { "angrybirds", "theoneandonly", "BETA-TESTER02", "BETA-TESTER03", "Coder-Cha05", "arglydkst1234" };
 
         private void Button2_Click(object sender, EventArgs e)
         {
