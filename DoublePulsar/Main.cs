@@ -1728,8 +1728,7 @@ namespace DoublePulsar
             panelhome.Visible = true;
             panelsettings.Visible = true;
             panelchangelog.Visible = true;
-            changelog.SelectionStart = changelog.TextLength;
-            changelog.ScrollToCaret();
+            
         }
 
         private void Profiletitle_MouseHover(object sender, EventArgs e)

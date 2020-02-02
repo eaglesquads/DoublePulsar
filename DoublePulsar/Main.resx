@@ -4088,80 +4088,48 @@
     <value>304, 17</value>
   </metadata>
   <data name="changelog.Text" xml:space="preserve">
-    <value>(BETA V2) DoublePulsar Framework
+    <value>(BETA V5) DoublePulsar Framework
 
 
-Changelog:
+{Changelog}
 
-- Fixed a bug where the AV did not scan folders
-
-____________________________________________________
-
-(BETA V3) DoublePulsar Framework
-
-
-Changelog:
 
 &lt;General&gt;
 
-- Embedded discord webhooks
-- Fixed Various small issues
+- Settings tab is now available
+- Changelog tab is now available
+- Embedded GitHub API
+- Fixed various issues 
 
-&lt;Bug Reporting&gt;
+(Settings Tab)
 
-- Fixed Bug Reporting form not functioning properly
+- Embedded user profiles (Pending Improvements)
+- Added option to release all IP Configurations
+
 
 &lt;User Interface&gt;
 
-- Reworked UI
-- Removed Console Tab
-- Added Home Tab (Currently under Development)
-- Added Support Tab (Currently under Development)
-- Added Settings Tab (Currently Under Development)
 
-____________________________________________________
+(Settings Tab)
 
-(BETA V4) DoublePulsar Framework
+- Enabled server side profile titles
+- Enabled server side profile descriptions
+- Enabled client side custom user avatars 
+- Enabled "Discard all" option for effective data deletion upon request
+- Added Form opacity adjustment slider
+- Added monitor brightness adjustment slider
 
+(Changelog Tab)
 
-Changelog:
-
-&lt;General&gt;
-
-- Support Tab is now available
-- Home tab is now available (Pending improvements)
-- Embedded ping measurement
-- Embedded internet connection detector
-
-&lt;User Interface&gt;
-
-- Added AV status depending on current threat risk (Partially available)
-- AV Status are as following: Secure, Vulnerable, High Danger Risk
-
-&lt;Login Form&gt;
-
-- Added "Remember me" option for faster login
-- Registered @Sweepi
-
-____________________________________________________
-
-(BETA V4.5) DoublePulsar Framework
+- Updated the TextBox accordingly
 
 
-Changelog:
+&lt;Coding&gt;
 
-&lt;General&gt;
+- Github Repository is now open
+- All further updates will be directly pushed there
 
-- Minor Overall Improvements
-- Integrated process detector to avoid multiple application launches at once
-
-&lt;User Interface&gt;
-
-- Fully implemented protection status (Protected/Vulnerable/At risk)
-
-&lt;LAN Chat&gt;
-
-- Username is now set according to your account credentials by default</value>
+</value>
   </data>
   <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
