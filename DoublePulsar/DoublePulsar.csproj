@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34FA93D0-745E-4570-9A7C-408CCFB28569}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoublePulsar</RootNamespace>
+    <AssemblyName>DoublePulsar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DoublePulsar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.21, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\BunifuUI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BugReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugReport.Designer.cs">
+      <DependentUpon>BugReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BugReportingHTTP.cs" />
+    <Compile Include="LAN Messenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LAN Messenger.Designer.cs">
+      <DependentUpon>LAN Messenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BugReport.resx">
+      <DependentUpon>BugReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LAN Messenger.resx">
+      <DependentUpon>LAN Messenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcoiris.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EternalBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-gifspeed-2017936.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-gifspeed-5192147.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-gifspeed-9877567.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-gifmaker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-gifmaker %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-gifmaker %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screenshot_20190913_183123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\458594.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_984288.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_9842881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4585941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DoublePulsar.ico" />
+    <Content Include="image_XQP_icon.ico" />
+    <None Include="Resources\unnamed1.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\negative.gif" />
+    <None Include="Resources\Status2.png" />
+    <None Include="Resources\Status1.png" />
+    <None Include="Resources\Comp 10.png" />
+    <None Include="Resources\Animated Logo.gif" />
+    <None Include="Resources\Comp-2_2.gif" />
+    <None Include="Resources\two.gif" />
+    <None Include="Resources\one.gif" />
+    <None Include="Resources\Message-1.3s-200px.gif" />
+    <None Include="Resources\minimize_9842882.png" />
+    <None Include="Resources\orange.png" />
+    <None Include="Resources\image %282%29.png" />
+    <None Include="Resources\glossy-orange-circle-icon-md.png" />
+    <None Include="Resources\Ski_trail_rating_symbol-green_circle.png" />
+    <None Include="Resources\BG.wav" />
+    <None Include="Resources\DoublePulsar1.png" />
+    <None Include="Resources\DoublePulsar.png" />
+    <None Include="Resources\Banner.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
